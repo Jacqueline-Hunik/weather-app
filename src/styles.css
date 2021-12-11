@@ -1,0 +1,40 @@
+h1,
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+
+form {
+  margin-top: 30px;
+  padding-left: 25px;
+  max-width: 1000px;
+}
+
+.headings {
+  margin: 30px;
+}
+
+.currentTemp {
+  padding-left: 33px;
+  font-size: 70px;
+}
+
+.moreInfo {
+  font-size: 15px;
+  position: relative;
+  text-align: right;
+  top: -145px;
+  right: 100px;
+}
+
+#text-input {
+  width: 500px;
+}
+
+.formText {
+  padding: 5px;
+  margin: 10px;
+}
+
+#current-weather-button {
+  margin-left: 10px;
+}
