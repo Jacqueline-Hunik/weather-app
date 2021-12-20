@@ -27,31 +27,62 @@
   </head>
   <body>
     <div class="container">
-      <div class="card" style="width: 800px">
-        <form id="search-city-form">
-          <input type="text" placeholder="Search for City" class="formText" id="text-input" />
-          <input type="submit" value="Search" id="submit-button" class="btn btn-primary"/>
-          <input type="submit" value="Current" id= "current-weather-button" class="btn btn-info"/>
-        </form>
+      <form id="search-city-form">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="text"
+              placeholder="Search for City"
+              class="form-control"
+              id="text-input"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              id="submit-button"
+              class="btn btn-primary"
+            />
+            <input
+              type="submit"
+              value="Current"
+              id="current-weather-button"
+              class="btn btn-info"
+            />
+          </div>
+        </div>
+      </form>
 
-        <div class="headings">
+      <div class="row">
+        <div class="col-6">
           <h1 class="city-name">Lethbridge, AB</h1>
-          <h3 class="date"></h3>
-          <h3 class="condition"></h3>
+          <ul>
+            <li class="date">Friday 10:00</li>
+            <li class="condition">Cloudy</li>
+          </ul>
         </div>
-        <div class="currentTemp">
-          -5℃
-        </div>
-        <div class="moreInfo">
-          <h5 class="humidity">Humidity: 0% </h5>
-          <h5 class="wind">Wind Speed: 5km/h</h5> 
-        </div>
-        </div>
-        <span class="creator-name">
-        <a href="https://github.com/Jacqueline-Hunik/weather-app" target="_blank">Source code</a>
-        by, Jacqueline Cunningham-Oostlander
-        </span>
       </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="currentTemp">-5℃</div>
+        </div>
+        <div class="col-6">
+          <ul class="weather-info">
+            <li>Humidity: <span class="humidity">0</span>%</li>
+            <li>Wind Speed: <span class="wind">5</span>km/h</li>
+          </ul>
+        </div>
+      </div>
+      <span class="creator-name">
+        <a
+          href="https://github.com/Jacqueline-Hunik/weather-app"
+          target="_blank"
+          >Source code</a
+        >
+        by, Jacqueline Cunningham-Oostlander
+      </span>
     </div>
     <script src="src/new.js"></script>
   </body>

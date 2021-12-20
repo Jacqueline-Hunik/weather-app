@@ -1,50 +1,63 @@
-h1,
-h3 {
-  font-family: "Roboto Slab", serif;
-}
+body {
+        background-color: #f9f7fe;
+      }
 
-form {
-  margin-top: 30px;
-  padding-left: 25px;
-  max-width: 1000px;
-}
+      h1 {
+        font-family: "Roboto Slab", serif;
+        padding-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        line-height: 35px;
+      }
 
-a {
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
+      form {
+        margin-top: 30px;
+        padding-left: 25px;
+        max-width: 1000px;
+      }
 
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
+      li {
+        list-style: none;
+        font-size: 25px;
+        line-height: 35px;
+      }
 
-.headings {
-  margin: 30px;
-}
+      a {
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
 
-.currentTemp {
-  padding-left: 33px;
-  font-size: 70px;
-}
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
 
-.moreInfo {
-  font-size: 15px;
-  position: relative;
-  text-align: right;
-  top: -145px;
-  right: 100px;
-}
+      .container {
+        background-color: #fff;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        border: 1px solid black;
+        border-radius: 10px;
+        max-width: 900px;
+      }
 
-#text-input {
-  width: 500px;
-}
+      .creator-name {
+        text-align: center;
+      }
+      .currentTemp {
+        padding-left: 33px;
+        font-size: 50px;
+      }
 
-.formText {
-  padding: 5px;
-  margin: 10px;
-}
+      .weather-info {
+        text-align: right;
+      }
 
-#current-weather-button {
-  margin-left: 10px;
-}
+      .formText {
+        padding: 5px;
+        margin: 10px;
+      }
+
+      #current-weather-button {
+        margin-left: 10px;
