@@ -1,63 +1,64 @@
 body {
-        background-color: #f9f7fe;
-      }
+  background-color: #f9f7fe;
+}
 
-      h1 {
-        font-family: "Roboto Slab", serif;
-        padding-left: 30px;
-        margin-top: 20px;
-        margin-bottom: 0px;
-        line-height: 35px;
-      }
+h1 {
+  font-family: "Roboto Slab", serif;
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  line-height: 35px;
+}
 
-      form {
-        margin-top: 30px;
-        padding-left: 25px;
-        max-width: 1000px;
-      }
+form {
+  margin-top: 30px;
+  padding-left: 25px;
+  max-width: 1000px;
+}
 
-      li {
-        list-style: none;
-        font-size: 25px;
-        line-height: 35px;
-      }
+li {
+  list-style: none;
+  font-size: 25px;
+  line-height: 35px;
+}
 
-      a {
-        text-decoration: none;
-        transition: all 200ms ease-in-out;
-      }
+a {
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
 
-      a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-      .container {
-        background-color: #fff;
-        display: block;
-        margin: 0 auto;
-        margin-top: 40px;
-        border: 1px solid black;
-        border-radius: 10px;
-        max-width: 900px;
-      }
+.container {
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 900px;
+}
 
-      .creator-name {
-        text-align: center;
-      }
-      .currentTemp {
-        padding-left: 33px;
-        font-size: 50px;
-      }
+.creator-name {
+  text-align: center;
+}
+.currentTemp {
+  padding-left: 33px;
+  font-size: 50px;
+}
 
-      .weather-info {
-        text-align: right;
-      }
+.weather-info {
+  text-align: right;
+}
 
-      .formText {
-        padding: 5px;
-        margin: 10px;
-      }
+.formText {
+  padding: 5px;
+  margin: 10px;
+}
 
-      #current-weather-button {
-        margin-left: 10px;
+#current-weather-button {
+  margin-left: 10px;
+}
