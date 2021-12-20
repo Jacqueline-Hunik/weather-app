@@ -45,9 +45,9 @@ a:hover {
 .creator-name {
   text-align: center;
 }
-.currentTemp {
-  padding-left: 33px;
-  font-size: 50px;
+
+.temp {
+  text-align: left;
 }
 
 .weather-info {
@@ -61,4 +61,9 @@ a:hover {
 
 #current-weather-button {
   margin-left: 10px;
+}
+
+#currentTemp {
+  padding-left: 33px;
+  font-size: 50px;
 }

@@ -29,7 +29,7 @@ function showTemp(response) {
   temp = Math.round(temp);
   let h1 = document.querySelector(".city-name");
   h1.innerHTML = city;
-  let currentTemp = document.querySelector(".currentTemp");
+  let currentTemp = document.querySelector("#currentTemp");
   currentTemp.innerHTML = `${temp}℃`;
   //humidity
   let humidity = response.data.main.humidity;
