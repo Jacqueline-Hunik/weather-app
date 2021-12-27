@@ -62,6 +62,7 @@ a:hover {
 .weather-forecast {
   margin: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .weather-forecast-icon {
@@ -71,10 +72,19 @@ a:hover {
 .weather-forecast-day {
   font-size: 16px;
   font-weight: 600;
+  color: #777777;
 }
 
 .weather-forecast-temp {
   font-size: 14px;
+}
+.weather-forecast-max-temp {
+  color: black;
+  font-weight: 500;
+}
+
+.weather-forecast-min-temp {
+  color: #777777;
 }
 
 #current-weather-button {

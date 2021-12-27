@@ -22,8 +22,15 @@ function formatDate(currentDate) {
   return sentence;
 }
 
+function getForecast(coordinates) {
+  let apiKey = "6d0e6f24b78bc6a485767b30b562c967";
+  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+
+  // call display forecast
+  axios.get(apiURL).then(displayForecast);
+}
+
 function showTemp(response) {
-  console.log(response);
   //variable initializations
   let weatherIcon = document.querySelector("#weather-icon");
   let city = response.data.name;
@@ -37,9 +44,6 @@ function showTemp(response) {
   let clouds = response.data.weather[0].description;
   let description = document.querySelector(".condition");
 
-  //call display forecast
-  displayForecast();
-
   temp = Math.round(temp);
   h1.innerHTML = city;
   currentTemp.innerHTML = `${temp}℃`;
@@ -50,6 +54,8 @@ function showTemp(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+
+  getForecast(response.data.coord);
 }
 
 function getWeatherInfo(city) {
@@ -66,28 +72,44 @@ function handleSubmit(event) {
   getWeatherInfo(cityName.value);
 }
 
-function displayForecast() {
+function formatDay(time) {
+  let date = new Date(time * 1000);
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
+  let day = days[date.getDay()];
+
+  return day;
+}
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat"];
 
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
   <div class="col-2" id="forecast-day">
-    <div class="weather-forecast-day">${day}</div>
+    <div class="weather-forecast-day">${formatDay(forecastDay.dt)}</div>
       <img
-        src="http://openweathermap.org/img/wn/10d@2x.png"
+        src="http://openweathermap.org/img/wn/${
+          forecastDay.weather[0].icon
+        }@2x.png"
         alt=" weather icon"
         class="weather-forecast-icon"
       />
       <div class="weather-forecast-temp">
-        <span class="weather-forecast- max-temp">18° </span>
-        <span class="weather-forecast- min-temp">12° </span>
+        <span class="weather-forecast-max-temp">${Math.round(
+          forecastDay.temp.max
+        )}° </span>
+        <span class="weather-forecast-min-temp">${Math.round(
+          forecastDay.temp.min
+        )}° </span>
     </div>
   </div>
   `;
+    }
   });
   forecastHTML = forecastHTML + `</div>`;
 
