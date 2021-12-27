@@ -18,7 +18,7 @@ form {
 
 li {
   list-style: none;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 35px;
 }
 
@@ -36,8 +36,8 @@ a:hover {
   background-color: #fff;
   display: block;
   margin: 0 auto;
-  margin-top: 40px;
-  border: 1px solid black;
+  margin-top: 75px;
+  border: 1px solid rgb(231, 230, 230);
   border-radius: 10px;
   max-width: 900px;
 }
@@ -51,12 +51,30 @@ a:hover {
 }
 
 .weather-info {
-  text-align: right;
+  text-align: left;
 }
 
 .formText {
   padding: 5px;
   margin: 10px;
+}
+
+.weather-forecast {
+  margin: 20px;
+  padding-top: 20px;
+}
+
+.weather-forecast-icon {
+  width: 90px;
+}
+
+.weather-forecast-day {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.weather-forecast-temp {
+  font-size: 14px;
 }
 
 #current-weather-button {
@@ -66,4 +84,8 @@ a:hover {
 #currentTemp {
   padding-left: 33px;
   font-size: 50px;
+}
+
+#forecast-day {
+  text-align: center;
 }

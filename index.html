@@ -29,7 +29,7 @@
     <div class="container">
       <form id="search-city-form">
         <div class="row">
-          <div class="col-9">
+          <div class="col-10">
             <input
               type="text"
               placeholder="Search for City"
@@ -37,18 +37,12 @@
               id="text-input"
             />
           </div>
-          <div class="col-3">
+          <div class="col-2">
             <input
               type="submit"
               value="Search"
               id="submit-button"
               class="btn btn-outline-primary"
-            />
-            <input
-              type="submit"
-              value="Current"
-              id="current-weather-button"
-              class="btn btn-outline-success"
             />
           </div>
         </div>
@@ -80,6 +74,20 @@
             <li>Humidity: <span class="humidity">0</span>%</li>
             <li>Wind Speed: <span class="wind">5</span>km/h</li>
           </ul>
+        </div>
+      </div>
+
+      <div class="weather-forecast">
+        <div class="row">
+          <div class="col-2" id="forecast-day">
+            <div class="weather-forecast-day">Thu</div>
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt=" weather icon"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temp">18° 12°</div>
+          </div>
         </div>
       </div>
       <span class="creator-name">
